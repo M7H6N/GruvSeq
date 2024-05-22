@@ -1,0 +1,24 @@
+{
+    "name": "gl",
+    "author": "m7h6n",
+    "version": "1.0.0",
+    "description": "Gruvbox for Logseq",
+    "logseq": {
+      "themes": [
+        {
+          "name": "GruvSeq",
+          "url": "./dist/main.css"
+        }
+      ],
+      "id": "m7h6n_gruvseq",
+      "icon": "./logo.png"
+    },
+    "scripts": {
+        "build": "node-sass ./src/scss/main.scss ./custom.css",
+        "watch": "node-sass ./src/scss/main.scss ./custom.css --watch"
+    },
+    "devDependencies": {
+      "node-sass": "^6.0.0"
+    }
+  }
+  
