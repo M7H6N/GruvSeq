@@ -1,0 +1,69 @@
+@import 'palette';
+
+html[data-theme="light"] #app-container::before {
+  opacity: 0.05;
+}
+
+.light-theme,
+html[data-theme="light"] {
+  --ct-primary-color: $gb-lm-dark-yellow; 
+  --ct-secondary-color: $gb-lm-dark-orange; 
+  --ct-warning-color: $gb-lm-light-red;  
+  --ct-success-color: $gb-lm-dark-green;  
+  --ct-highlight-color: $gb-lm-dark-blue; 
+
+  --color-level-1: $gb-lm-bg0;
+  --color-level-2: $gb-lm-bg1;
+  --color-level-3: $gb-lm-bg2;
+  --color-level-4: $gb-lm-bg3;
+  --color-level-5: $gb-lm-bg4;
+  --color-level-6: $gb-lm-light-gray;
+
+  --ls-primary-background-color: $gb-lm-bg0-hard;
+  --ls-secondary-background-color: var(--color-level-1);
+  --ls-tertiary-background-color: var(--color-level-2);
+  --ls-quaternary-background-color: var(--color-level-3);
+
+  --ls-border-color: var(--ls-tertiary-background-color);
+
+  --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
+
+  --ls-primary-text-color: $gb-lm-fg0;
+  --ls-secondary-text-color: $gb-lm-fg1;
+
+  --ct-bold-color: $gb-lm-fg2;
+
+  --ls-link-text-color: var(--ct-primary-color);
+  --ls-link-ref-text-color: var(--ct-primary-color);
+  --ls-link-ref-text-hover-color: var(--ct-secondary-color);
+
+  --ls-active-primary-color: var(--ct-primary-color);
+  --ls-active-secondary-color: var(--ct-secondary-color);
+  --ls-external-link-color: var(--ct-secondary-color);
+
+  --ls-guideline-color: var(--ls-tertiary-background-color);
+  --ls-block-bullet-color: var(--ls-tertiary-background-color);
+  --ls-bullet-closed-color: var(--ls-secondary-text-color);
+  --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
+  --ct-block-arrow-color: $gb-lm-light-gray;
+
+  --ct-page-reference-color: var(--ls-active-primary-color);
+
+  --ls-icon-color: var(--ls-primary-text-color);
+
+  --ct-block-reference-background: rgba($gb-lm-dark-orange, 0.2);
+  --ct-block-reference-background-hover: rgba($gb-lm-dark-orange, 0.3);
+
+  --ls-page-properties-background-color: var(--ls-tertiary-background-color);
+
+  --ls-scrollbar-foreground-color: var(--ls-secondary-background-color);
+
+  --ct-header-bg-color: $gb-lm-bg0-hard;
+
+  --ls-selection-color: $gb-lm-light-yellow;  
+  --ls-block-highlight-color: $gb-lm-bg2;  
+}
+
+.light-theme .image-resize {
+  filter: brightness(0.8) saturate(85%);
+}
